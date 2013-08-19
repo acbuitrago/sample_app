@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "calculate_pages/new"
+  post "calculate_pages/results"
   get "static_pages/home"
   get "static_pages/results"
   # The priority is based upon order of creation: first created -> highest priority.

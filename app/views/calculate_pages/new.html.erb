@@ -1,0 +1,7 @@
+<h1>Calcular el peso - Formula BMI</h1>
+<p>Calcular peso con formula Devine en pulgadas para dar peso en libras (Hombre)</p>
+<%= form_tag('results',:method => :post) do%>
+    <label> <h4>¿ Cúal es tu altura en pulgadas?</h4></label>
+    <input name="altIn">
+<%= submit_tag("Calcula mi peso ideal!") %>
+<% end %>

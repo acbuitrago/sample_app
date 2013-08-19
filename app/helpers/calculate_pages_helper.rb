@@ -1,0 +1,2 @@
+module CalculatePagesHelper
+end
