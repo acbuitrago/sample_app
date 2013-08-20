@@ -1,7 +1,7 @@
 SampleApp::Application.routes.draw do
   root :to => 'calculate_pages#new'
   match '/new',    to: 'calculate_pages#new',    via: 'get'
-  match '/results', to: 'calculate_pages#results', via 'post'
+  match '/results', to: 'calculate_pages#results', via: 'post'
 
   get "static_pages/home"
   get "static_pages/results"
