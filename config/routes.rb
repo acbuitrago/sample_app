@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  root  "calculate_pages/new"
+  root :to => 'calculate_pages#new'
   get "calculate_pages/new"
   post "calculate_pages/results"
   get "static_pages/home"
