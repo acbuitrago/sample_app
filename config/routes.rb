@@ -1,5 +1,8 @@
 SampleApp::Application.routes.draw do
-  root :to => 'calculate_pages#new'
+  root :to => 'static_pages#home'
+
+  match '/calculate_pages/new',    to: 'calculate_pages#new',    via: 'get'
+  match '/miller_controller/home',   to: 'miller_controller#home',   via: 'get'
 
   get "calculate_pages/new"
   post "calculate_pages/results"
