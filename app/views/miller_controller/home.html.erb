@@ -1,0 +1,15 @@
+<% provide(:title, 'Calcular') %>
+
+<div class="container">
+  <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+  <%= yield %>
+</div>
+<h1>Calcular el peso - Formula de Miller</h1>
+<p>Calcular peso con formula de Miller en pulgadas para dar peso en libras (Hombre)</p>
+<%= form_tag('results',:method => :post) do%>
+    <label> <h4>¿ Cuál es tu altura en pulgadas?</h4></label>
+    <input name="altIn">
+<%= submit_tag("Calcula mi peso ideal!") %>
+<% end %>
