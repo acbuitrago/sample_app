@@ -1,0 +1,2 @@
+module MillerControllerHelper
+end

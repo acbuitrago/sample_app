@@ -18,3 +18,5 @@ Feature: Weight Calculator Devine Men
     Given I have entered 50 inches in the height field
     When the user submits valid height information
     Then he should see his ideal weight in lb, 59.4lb
+
+ 
