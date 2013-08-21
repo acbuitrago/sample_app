@@ -1,7 +1,7 @@
 Feature: Weight Calculator Devine Men
   In order to calculate my ideal weight
-  As a user
-  I want to enter my height and know my ideal weight according to the BMI formula
+  As a male user
+  I want to enter my height in inches and know my ideal weight in lb according to the Devine formula
 
 
   Scenario: Enter a 0 height

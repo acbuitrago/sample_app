@@ -1,8 +1,7 @@
 SampleApp::Application.routes.draw do
   root :to => 'calculate_pages#new'
-  match '/new',    to: 'calculate_pages#new',    via: 'get'
-  match '/results', to: 'calculate_pages#results', via: 'post'
-
+  get "calculate_pages/new"
+  post "calculate_pages/results"
   get "static_pages/home"
   get "static_pages/results"
   # The priority is based upon order of creation: first created -> highest priority.
